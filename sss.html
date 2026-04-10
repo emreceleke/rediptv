@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED IPTV - SS IPTV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-quantix-style.css">
+    <!--
+
+TemplateMo 614 Quantix SaaS
+
+https://templatemo.com/tm-614-quantix-saas
+
+-->
+    <style>
+        /* Templates page specific styles */
+
+        .page-header {
+            padding: 80px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 500px;
+            background: radial-gradient(circle at center,
+                rgba(255, 107, 107, 0.10) 0%,
+                rgba(255, 107, 107, 0.03) 35%,
+                transparent 55%);
+            pointer-events: none;
+        }
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 65%);
+            -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 20%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .page-header > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header .section-desc {
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="./index.html" class="nav-brand">
+                <span class="brand-icon"></span>
+                RED IPTV
+            </a>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary" onclick="return false;">Panel Giriş</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+           
+        </div>
+    </section>
+
+    <!-- TEMPLATES GRID -->
+
+        <div class="hero-inner container">
+            <div class="subscribe-inner fade-up">
+                <h2 class="section-title">Smart Players Lite Kullanımı</h2></br>
+
+<h4>Uygulama Mağazasından Uygulamayı İndirin</h4>
+
+<a href="https://apps.apple.com/tr/app/smarters-player-lite/id1628995509" target="_blank" ><img src="img/appstore.webp" width="10%" ></a></br>
+<a href="https://d.apkpure.net/b/APK/com.nst.smartersplayer?version=latest" target="_blank" ><img src="img/gplay.webp" width="10%" ></a>(APK)
+<h4>1.Smart Players Lite uygulamasından XTREAM CODE'a basın.</h4>
+   <img src="img/ss1.webp"></br>
+</br>
+<h4>2. -Oynatma Listesi Adını yazın, Kullanıcı Adı'nızı yazın, </br> -Şifre'nizi yazın, -Size verilen Linki yazın</br>-ADD PLAYLIST Butonuna basın.</h4>
+   <center><img src="img/ss2.webp"></center></br>
+
+<h4>3.-1* 🔄 ile listeyi güncelleyin. </br> -2*Expiration Date: IPTV'nizin son kullanma tarihini gösterir.</h4>
+<img src="img/ss4.webp">
+<img src="img/ss6.webp">
+<img src="img/ss7.webp">
+<img src="img/ss8.webp">
+<img src="img/ss9.webp">
+<img src="img/ss5.webp">
+<img src="img/ss10.webp">
+<img src="img/ss11.webp">
+    </section>
+</center>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row-links">
+                <a href="#features">Özellikler</a>
+                <span class="footer-link-dot"></span>
+                <a href="#pricing">Paketler</a>
+                <span class="footer-link-dot"></span>
+                <a href="./sss.html" onclick="return false;">SSS</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="templatemo-quantix-script.js"></script>
+
+</body>
+</html>
+
+
+    <script>
+        // Navbar scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Mobile nav
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // Scroll reveal
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!prefersReducedMotion) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const siblings = entry.target.parentElement.querySelectorAll('.fade-up:not(.visible)');
+                        const idx = Array.from(siblings).indexOf(entry.target);
+                        setTimeout(() => entry.target.classList.add('visible'), Math.max(0, idx) * 100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        } else {
+            document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+        }
+    </script>
+
+</body>
+</html>
